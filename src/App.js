@@ -8,8 +8,10 @@ class App extends Component {
     this.counterUpdate = this.counterUpdate.bind(this)
   }
 
-  counterUpdate(){
-    this.setState({ count: this.state.count + 1 })
+  counterUpdate(e){
+    this.setState({
+      count: e.target.value.length
+    })
   }
 
   render() {
